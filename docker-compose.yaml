@@ -31,4 +31,4 @@ services:
       - HUB_HOST= hub
       - MODULE=testng.xml
     volumes:
-      - ./output/testng-result:/usr/selenium/testng-output
+      - ./output/search-result:/usr/share/DockersTest/test-output
