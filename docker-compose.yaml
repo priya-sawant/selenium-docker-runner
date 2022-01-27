@@ -2,8 +2,6 @@ version: "3"
 services:
   hub:
     image: selenium/hub:4.1.0
-    ports:
-      - "3333:4444"
   chrome:
     image: selenium/node-chrome:4.1.0
     shm_size: '2g'        
@@ -31,4 +29,4 @@ services:
       - HUB_HOST= hub
       - MODULE=testng.xml
     volumes:
-      - /testng-result:/usr/selenium/docker/test-output
+      - ./output/testng-result:/usr/selenium/docker/test-output
