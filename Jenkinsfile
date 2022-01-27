@@ -21,7 +21,7 @@ pipeline{
 		always{
 			
 			bat "docker-compose down"
-			bat "sudo rm -rf output/"
+			
 			
 		}
 	}
